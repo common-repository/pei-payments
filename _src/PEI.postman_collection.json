@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "4bd37bc1-d62d-467f-af43-b0b9efd7b7e7",
+		"name": "PEI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PEI Checkout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "bO8GooXQm03nwzuKvp2oAajhY7ufoa5pabRG4Tad"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Venta de camello\",\n    \"amount\": 145000.00,\n    \"currency\": \"CRC\",\n    \"callback\": \"https://tiendauniversal.com/\",\n    \"customArray\": [\n        {\n            \"key\": \"codigo_interno\",\n            \"value\": 924355000\n        }\n    ],\n    \"businessId\": 42248\n}"
+				},
+				"url": {
+					"raw": "https://apibiz.gentepei.dev/v1/checkout",
+					"protocol": "https",
+					"host": [
+						"apibiz",
+						"gentepei",
+						"dev"
+					],
+					"path": [
+						"v1",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
